@@ -1,3 +1,2 @@
 # Agile-Data-Science-Project-FR1
-## Very cool project 
-hej hej
+Created by Joel, Clauria, Alba, Alejandro, Carl, Max and Sam
