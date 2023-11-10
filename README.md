@@ -1,6 +1,2 @@
 # Agile-Data-Science-Project-FR1
-<<<<<<< HEAD
-Very cool project 
-=======
-## Very cool project 
->>>>>>> 1f268f54c79b99ca49a14576c4aa6fefdb636096
+Created by Joel, Clauria, Alba, Alejandro, Carl, Max and Sam
