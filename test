@@ -1,0 +1,12 @@
+test
+# Por favor ingresa el mensaje del commit para tus cambios. Las
+#  líneas que comiencen con '#' serán ignoradas, y un mensaje
+#  vacío aborta el commit.
+#
+# En la rama us1_branch
+# Tu rama está adelantada a 'origin/us1_branch' por 1 commit.
+#   (usa "git push" para publicar tus commits locales)
+#
+# Cambios a ser confirmados:
+#	modificados:     README.md
+#
