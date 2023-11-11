@@ -13,7 +13,7 @@ Spotlight offers 3 different kind of popular rating datasets provided as modules
 
 The data provided by Spotlight is alegable to be used for the training and testing of the model, nevertheless as it is provided in predefined Spotlight modules it is very hard to do a pre-analysis of the data alone.
 
-Because one of the tasks of the project corresponds to analyzing the data, we have decided to use data from [The Movies Dataset] (https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) available on Kaggle to do so. Some of the models will be trained from this data and others will be trained directly from the data provided by Spotlight descrived above.
+Because one of the tasks of the project corresponds to analyzing the data, we have decided to use data from [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) available on Kaggle to do so. Some of the models will be trained from this data and others will be trained directly from the data provided by Spotlight descrived above.
 
 The Movies Dataset contains files with 26 million ratings from 270,000 users for 45,000 movies. For the purpose of this project, we used the ratings_small file from the dataset, which contains a subset of 100,000 ratings from 700 users on 9,000 movies. The full dataset takes a much longer time to train on but you can try using it if you have a machine with a powerful GPU. 
 
