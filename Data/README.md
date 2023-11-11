@@ -7,4 +7,3 @@ Spotlight offers 3 different kind of datasets:
 2) 
 3)
 
-hello
