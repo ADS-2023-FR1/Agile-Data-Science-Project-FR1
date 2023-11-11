@@ -6,3 +6,5 @@ Spotlight offers 3 different kind of datasets:
 1) 
 2) 
 3) 
+
+Movielens dataset
