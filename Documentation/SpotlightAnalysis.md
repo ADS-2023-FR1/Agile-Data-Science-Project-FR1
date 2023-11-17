@@ -42,4 +42,3 @@ Flask for the Brain: Now, think of Flask as the brain of the operation. It takes
 Connecting React and Flask: When you type in your details on the website, React sends that information to Flask through a special message (kind of like an email). Flask then processes this info, finds movies that match your taste, and sends back a list of recommendations.
 
 ![Movie Recommendation System](Documentation/img/diagram.png)
-
