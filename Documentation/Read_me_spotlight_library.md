@@ -51,7 +51,8 @@ The sequence models available in Spotlight are the following:
 
 1. [**Implicit feedback models**](https://maciejkula.github.io/spotlight/sequence/implicit.html): implicit feedback includes actions like clicks, views, purchases, and other interactions users have with items. These models aim to capture user preferences and patterns based on implicit user feedback (in this case, the sequence of the particular user).
 This type of model is useful for recommending items given a sequence of previous items a user has interacted with.
-2. [**Sequence representations**](https://maciejkula.github.io/spotlight/sequence/representations.html): which represents the users based on their interactions with the movies. It can be achieved using a CNN, RNN, PoolNet, ...
+
+ To represent the data, it uses [**Sequence representations**](https://maciejkula.github.io/spotlight/sequence/representations.html): which represents the users based on their interactions with the movies. It can be achieved using a CNN, RNN, PoolNet, ...
 
 
 
@@ -96,9 +97,9 @@ Nevertheless, the loss function is a parameter of all models and can be choosen 
 
 The following evaluating metrics are incorporated into the Spotlight library:
 
-1. [**MRR scores**]: mean reciprocal rank (MRR) scores. One score is given for every user with interactions in the test set, representing the mean reciprocal rank of all their test items. 
-2. [**MRR scores in sequence model**]: nn a sequence model, the reciprocal rank of the last element is returned for each sequence.
-3. [**Precision and Recall**]: one score is given for every user with interactions in the test set, representing the Precision@k and Recall@k of all their test items.
+1. [**MRR scores**]: mean reciprocal rank (MRR) scores. One score is given for every user with interactions in the test set, representing the mean reciprocal rank of all their test items. Basically, it measures how far down the ranking is the first relevant item. The ideal value is 1, which means that the relevant results are close to the top of search results.
+2. [**MRR scores in sequence model**]: each sequence in test is split into two parts: the first part, containing all but the last element, is used to predict the last element. Then, the reciprocal rank of the last element is returned for each sequence.
+3. [**Precision and Recall**]: two scores are given for every user with interactions in the test set, representing the Precision@k and Recall@k of their best items. It has a parameter k, representing the amount of predictions retriever for each user.
 4. [**Precision and Recall in sequence model**]: each sequence in test is split into two parts: the first part, containing all but the last k elements, is used to predict the last k elements.
 5. [**RMSE**]: Root Mean Square Error score for test interactions.
 
