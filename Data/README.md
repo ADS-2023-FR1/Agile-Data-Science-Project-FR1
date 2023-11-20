@@ -24,3 +24,6 @@ We will use 3 data files:
 - **movies_metadata.csv** — contains the metadata for all the 45,000 movies in the dataset.
 - **links.csv** — contains the IDs that can be used to lookup each movie when joining this data with the movie metadata.
 
+In this folder we have created 2 jupyter notebooks:
+- *initial_metrics_data.ipynb*: has the code for the plots and the analysis of the data
+- *preprocess.ipynb*: has the code for preprocessing the data, looking for NaN and imputing them
