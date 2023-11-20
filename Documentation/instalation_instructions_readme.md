@@ -1,4 +1,4 @@
-# Here are listed the steps needed to 
+# Steps to install Spotlight 
 
 ### There are two ways of installing Spotlight:
 
