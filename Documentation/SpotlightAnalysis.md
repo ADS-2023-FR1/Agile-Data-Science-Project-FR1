@@ -43,4 +43,4 @@ Values that we want to send to the model:
 
 **Connecting React and Flask:** When you type in your details on the website, React sends that information to Flask through a special message (kind of like an email). Flask then processes this info, finds movies that match your taste, and sends back a list of recommendations.
 
-![Movie Recommendation System](/../img/diagram.png)
+![Movie Recommendation System](/../Documentation/img/diagram.png)
