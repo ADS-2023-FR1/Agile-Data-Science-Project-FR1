@@ -1,8 +1,8 @@
 # Readme if pipeline folder
 
-## Summary of training.ipynb
+## Summary of `training.ipynb`
 
-## Summary of user_interaction.py
+## Summary of `user_interaction.py`
 
 I created some functions needed to interpret inputs and outputs of the recomender through movielens data.
 These funtions depend on two files: **links.csv** and **movies.csv** for codifying and decodifying IDs and titles.
