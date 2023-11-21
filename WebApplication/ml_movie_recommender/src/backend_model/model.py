@@ -1,14 +1,7 @@
-from flask import Flask, request, jsonify
-import torch
+import difflib
 import numpy as np
 import pandas as pd
-import difflib
-from flask import Flask, request, jsonify
-from flask_cors import CORS  # Import CORS from flask_cors
-
-
-app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+import torch
 
 def get_movie_id(title):
     """
@@ -49,22 +42,3 @@ def recommend_new_sequence(movies, model_path, n_recom=5):
     best_movie_ids = indices[np.argsort(pred[indices])]
     titles = [get_movie_title(b+1) for b in best_movie_ids]  # Assuming movie IDs start from 1
     return titles
-
-@app.route('/getRecommendation', methods=['GET'])
-def get_recommendation():
-    if 'title' in request.args:
-        titles = request.args.getlist('title')
-        print(titles)
-        
-        model_path = "testmodel"  # Replace this with your model path
-        
-        recommendation = recommend_new_sequence(titles, model_path)  # Pass both titles and model_path
-
-        # Sending the recommendation back via JSON response
-        print(recommendation)
-        return jsonify({'recommendation': recommendation}), 200
-    else:
-        return jsonify({'error': 'Title not provided'}), 400
-
-if __name__ == '__main__':
-    app.run(debug=True)
