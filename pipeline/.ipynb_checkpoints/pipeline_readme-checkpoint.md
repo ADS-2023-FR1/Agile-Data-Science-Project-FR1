@@ -36,6 +36,9 @@ It's an example of an execution pipeline. At the moment it is super simple, with
 The goal of this file is to have the "oficial" execution process of our model in one place.
 When we add more steps, it should go here.
 
+As the pipeline at the moment is pretty simple and we just use a pretrained model, we don't need a config file,
+the parameters can be defined at the beginning of the notebook.
+
 ## Summary of `trained_model`
 
 It is an already trained model. At the moment, it is an implicit sequence model trained during 10 iters.
