@@ -1,0 +1,19 @@
+{
+    "model": "sequence",
+    "submodel": "implicit",
+    "loss": "pointwise",
+    "representation": "pooling",
+    "embedding_dim": 32,
+    "n_iter": 10,
+    "batch_size": 256,
+    "l2": 0.0,
+    "lr": 0.01,
+    "optim": null,
+    "use_cuda": false, 
+    "sparse": false, 
+    "random_state": null, 
+    "num_negative_samples": 5,
+
+    "dataset": "Movielens",
+    "size": "100K"
+}
