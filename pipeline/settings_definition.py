@@ -6,13 +6,13 @@ def define_model(config):
     elif config["model"] == "factorizer" and config["submodel"] == "implicit":
         from spotlight.factorization.implicit import ImplicitFactorizationModel as ImportModel
     elif config["model"] == "factorizer" and config["submodel"] == "explicit":
-        from spotlight.factorization.implicit import ImplicitFactorizationModel as ImportModel
+        from spotlight.factorization.explicit import ExplicitFactorizationModel as ImportModel
     else:
         raise Exception(f"Incorrect model configuration for model {config["model"]} and submodel {config["submodel"]}.")
     return ImportModel(loss=config["loss"], representation=config["representation"], embedding_dim=config["embedding_dim"],
                        n_iter=config["n_iter"], batch_size=config["batch_size"], l2=config["l2"], learning_rate=config["lr"],
                        optimizer_func=config["optim"], use_cuda=config["use_cuda"], sparse=config["sparse"], 
-                       random_state=config["random_state"], num_negative_samples=config["num_negative_samples"])
+                       random_state=config["random_state"])#, num_negative_samples=config["num_negative_samples"])
 
 def define_dataset(config):
     """Function to define the dataset based on the parameters of the config"""
