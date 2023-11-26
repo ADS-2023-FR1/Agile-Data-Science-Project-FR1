@@ -1,3 +1,5 @@
+
+
 export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
     if (movies.length < 2) {
       if (inputValue.trim() !== '') {
@@ -33,4 +35,27 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   export const handleChange = (event, setInputValue) => {
     setInputValue(event.target.value);
   };
+
+  export const searchChange = (e, setInputValue, setSuggestions, movieData) => {
+    const searchValue = e.target.value;
+    setInputValue(searchValue);
   
+    if (searchValue.trim() === '') {
+      setSuggestions([]);
+      return;
+    }
+  
+    const filteredSuggestions = movieData.filter((item) =>
+      item.title.toLowerCase().includes(searchValue.toLowerCase())
+    );
+  
+    const slicedSuggestions = filteredSuggestions.slice(0, 10);
+  
+    setSuggestions(slicedSuggestions);
+  };
+  
+  export const suggestionClick = (suggestion, setInputValue, setSuggestions) => {
+    const titleWithoutParentheses = suggestion.title.replace(/\s*\([^)]*\)\s*/g, '');
+    setInputValue(titleWithoutParentheses);
+    setSuggestions([]);
+  };

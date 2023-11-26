@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import '../style/App.css';
-import { addMovie, getRecommendation } from './movie'; // Import functions from movieFunctions.js
+import {addMovie, getRecommendation, searchChange,suggestionClick, } from './utils'; // Import functions from utils.js
+import movieData from './movie.json'; // Import movie.json file
 
-//Look at readme in WebApplication for instruction on how to run
 function MovieList() {
   const [movies, setMovies] = useState([]);
   const [inputValue, setInputValue] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [recommendations, setRecommendations] = useState([]);
+  const [suggestions, setSuggestions] = useState([]);
 
   const handleAddMovie = () => {
     addMovie(movies, setMovies, inputValue, setInputValue, setErrorMessage);
@@ -17,8 +18,12 @@ function MovieList() {
     getRecommendation(movies, setRecommendations, setErrorMessage);
   };
 
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
+  const handleSearchChange = (e) => {
+    searchChange(e, setInputValue, setSuggestions, movieData);
+  };
+
+  const handleSuggestionClick = (suggestion) => {
+    suggestionClick(suggestion, setInputValue, setSuggestions);
   };
 
   return (
@@ -29,9 +34,18 @@ function MovieList() {
           type="text"
           placeholder="Enter five movies that you have seen and you enjoy"
           value={inputValue}
-          onChange={handleChange}
+          onChange={handleSearchChange}
         />
         <button onClick={handleAddMovie}>Add Movie</button>
+      </div>
+      <div>
+        <ul>
+          {suggestions.map((suggestion, index) => (
+            <li key={index} onClick={() => handleSuggestionClick(suggestion)}>
+              {suggestion.title}
+            </li>
+          ))}
+        </ul>
       </div>
       {errorMessage && <p className="error-message">{errorMessage}</p>}
       <div className="movie-list">
