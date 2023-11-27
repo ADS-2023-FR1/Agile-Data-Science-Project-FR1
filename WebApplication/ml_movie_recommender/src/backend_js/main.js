@@ -12,7 +12,7 @@ import {
   searchChange,
   suggestionClick,
 } from './utils';
-import movieData from './movieTitle.json';
+import movieData from './movieTitle.json'; //data used for movie suggestion
 
 function MovieList() {
   const [movies, setMovies] = useState([]);

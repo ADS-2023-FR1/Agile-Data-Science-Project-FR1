@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../style/InputComponent.css';
+
 const InputComponent = ({ inputValue, handleSearchChange, handleAddMovie }) => {
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {

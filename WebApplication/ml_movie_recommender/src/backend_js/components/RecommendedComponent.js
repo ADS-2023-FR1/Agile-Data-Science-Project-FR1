@@ -9,7 +9,7 @@ const RecommendedMovies = ({ recommendations }) => {
         {recommendations.map((movie, index) => (
           <div key={index} className="movie-square">
             <div className="empty-square">
-              <img src={movie.imageUrl} alt={movie} />
+              <img src={movie.imageUrl} alt={movie} /> {/* feauture imbd img link*/}
               <div className="title-box">
                 <div className="movie-title">{movie}</div>
               </div>
