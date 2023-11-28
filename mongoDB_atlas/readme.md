@@ -10,7 +10,7 @@ Explanation step by step on how I have created the database on mongoDB Atlas.
 To check that the file is in the cluster i have followed these steps:
  - Select Connect to the cluster with 'Shell' option
  - Download mongosh
- - Add <your mongosh's download directory>/bin to your $PATH variable
+ - Add <your mongosh's download directory>/bin to your $PATH variable (a more detailed explanation of this is here: https://www.mongodb.com/docs/mongodb-shell/install/#procedure)
  - Run the connection string in cmd (connection string: mongosh "mongodb+srv://cluster0.zufneus.mongodb.net/" --apiVersion 1 --username agarciro335)
  - Use the database and the collection created, run these commands on cmd (the last command shows a sample of the database)
 	- show dbs
