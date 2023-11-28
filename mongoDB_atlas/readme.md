@@ -17,6 +17,8 @@ To check that the file is in the cluster i have followed these steps:
 	- use movielense_database
 	- show collections
 	- db.movies_100k.find()
+- The image 'execution_database' shows the result of these commands on the terminal
+
 
 The file I have used to upload to the cluster is the file "u.item" from movielense 100k dataset. I got it from the website: http://files.grouplens.org/datasets/movielens/ml-100k/
 
