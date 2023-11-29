@@ -18,6 +18,7 @@ or put a variety of diferent imputs that is not yet taken into account. This cou
 It contains the definition of some functions used for the training of the model.
 - `define_model(config)`: gets the config and returns a model with all the specifications selected.
 - `define_dataset(config)`: gets the config and returns the dataset with all the specifications selected.
+- `evaluate_model(model, test, config)`: gets the config, the trained model, and the test data, and returns a dictionary with all the metrics.
 
 ## Summary of `config.json`
 
@@ -38,6 +39,10 @@ When we add more steps, it should go here.
 
 As the pipeline at the moment is pretty simple and we just use a pretrained model, we don't need a config file,
 the parameters can be defined at the beginning of the notebook.
+
+## Summary of `validation.ipynb`
+
+Putting the funtions in `settings_definition.py` to use comparing the metrics of the different models and sumarising their performance. After training all models (without hyperparameter tuning) on the 100K mobielens data, the best performance comes from the implicit factorizer model. Still the mean mrr is best for the sequential model but there are lost of variability in its predictions.
 
 ## Summary of `trained_model`
 
