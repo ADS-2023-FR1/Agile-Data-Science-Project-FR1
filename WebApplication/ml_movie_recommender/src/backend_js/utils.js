@@ -1,19 +1,3 @@
-
-
-// export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
-//     if (movies.length < 5) {
-//       if (inputValue.trim() !== '') {
-//         setMovies([...movies, inputValue]);
-//         setInputValue('');
-//         setErrorMessage('');
-//       } else {
-//         setErrorMessage('Please enter a movie name');
-//       }
-//     } else {
-//       setErrorMessage('You can only add up to 5 movies');
-//     }
-//   };
-
 import movieData from './movieTitle.json'
 
 export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
