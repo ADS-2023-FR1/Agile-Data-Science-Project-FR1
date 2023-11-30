@@ -6,7 +6,11 @@ const MovieDisplay = ({ movies }) => {
       <h2>Movie List:</h2>
       <ul>
         {movies.map((movie, index) => (
-          <li key={index}>{movie}</li>
+          <li key={index}>
+            <span>{movie.title}</span>
+            <button  className="btn">Delete</button> 
+            {/* onClick={() => deleteTodo(todo.id)} */}
+          </li>
         ))}
       </ul>
     </div>

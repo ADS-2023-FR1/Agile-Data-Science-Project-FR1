@@ -3,12 +3,18 @@ import movieData from './movieTitle.json'
 export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
   if (movies.length < 5) {
     if (inputValue.trim() !== '') {
-      if(!(movies.includes(inputValue))){
+      const movieAlreadyInList = movies.some((movie) =>
+        movie.title.toLowerCase() === inputValue.toLowerCase()
+      );
+      if(movieAlreadyInList === false){
         const movieExists = movieData.some((movie) =>
           movie.title.toLowerCase() === inputValue.toLowerCase()
         );
         if (movieExists) {
-          setMovies([...movies, inputValue]);
+          const movie = movieData.find((movie) =>
+              movie.title.toLowerCase() === inputValue.toLowerCase()
+          );
+          setMovies([...movies, movie]);
           setInputValue('');
           setErrorMessage('');
         } else {
@@ -25,7 +31,6 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   }
 };
   
-
 
   export const getRecommendation = async (movies, setRecommendations, setErrorMessage) => {
     if (movies.length > 0) {
