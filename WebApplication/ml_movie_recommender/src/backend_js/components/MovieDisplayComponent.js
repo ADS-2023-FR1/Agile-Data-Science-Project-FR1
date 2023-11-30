@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const MovieDisplay = ({ movies , handleDeleteMovie }) => {
   return (
     <div className="movie-list">
@@ -10,8 +8,7 @@ const MovieDisplay = ({ movies , handleDeleteMovie }) => {
         {movies.map((movie, index) => (
           <li key={movie.id}>
             <span>{movie.title}</span>
-            <button onClick={() => handleDeleteMovie(movie.id)} className="btn">Delete</button> 
-            
+            <button onClick={() => handleDeleteMovie(movie.id)} className="btn">Delete</button>
           </li>
         ))}
       </ul>
