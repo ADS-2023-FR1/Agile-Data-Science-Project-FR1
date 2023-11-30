@@ -14,22 +14,24 @@
 //     }
 //   };
 
-import movieData from './movieTitle.json';
-
-
+import movieData from './movieTitle.json'
 
 export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
   if (movies.length < 5) {
     if (inputValue.trim() !== '') {
-      const movieExists = movieData.some((movie) =>
-        movie.title.toLowerCase() === inputValue.toLowerCase()
-      );
-      if (movieExists) {
-        setMovies([...movies, inputValue]);
-        setInputValue('');
-        setErrorMessage('');
+      if(!(movies.includes(inputValue))){
+        const movieExists = movieData.some((movie) =>
+          movie.title.toLowerCase() === inputValue.toLowerCase()
+        );
+        if (movieExists) {
+          setMovies([...movies, inputValue]);
+          setInputValue('');
+          setErrorMessage('');
+        } else {
+          setErrorMessage('Movie not found in database');
+        }
       } else {
-        setErrorMessage('Movie not found in database');
+        setErrorMessage('Movie already exists in the list');
       }
     } else {
       setErrorMessage('Please enter a movie name');
