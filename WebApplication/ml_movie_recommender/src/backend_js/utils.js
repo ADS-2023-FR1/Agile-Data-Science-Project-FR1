@@ -1,19 +1,46 @@
 
 
+// export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
+//     if (movies.length < 5) {
+//       if (inputValue.trim() !== '') {
+//         setMovies([...movies, inputValue]);
+//         setInputValue('');
+//         setErrorMessage('');
+//       } else {
+//         setErrorMessage('Please enter a movie name');
+//       }
+//     } else {
+//       setErrorMessage('You can only add up to 5 movies');
+//     }
+//   };
+
+import movieData from './movieTitle.json';
+
+
+
 export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
-    if (movies.length < 2) {
-      if (inputValue.trim() !== '') {
+  if (movies.length < 5) {
+    if (inputValue.trim() !== '') {
+      const movieExists = movieData.some((movie) =>
+        movie.title.toLowerCase() === inputValue.toLowerCase()
+      );
+      if (movieExists) {
         setMovies([...movies, inputValue]);
         setInputValue('');
         setErrorMessage('');
       } else {
-        setErrorMessage('Please enter a movie name');
+        setErrorMessage('Movie not found in database');
       }
     } else {
-      setErrorMessage('You can only add up to 5 movies');
+      setErrorMessage('Please enter a movie name');
     }
-  };
+  } else {
+    setErrorMessage('You can only add up to 5 movies');
+  }
+};
   
+
+
   export const getRecommendation = async (movies, setRecommendations, setErrorMessage) => {
     if (movies.length > 0) {
       try {
@@ -55,7 +82,8 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   };
   
   export const suggestionClick = (suggestion, setInputValue, setSuggestions) => {
-    const titleWithoutParentheses = suggestion.title.replace(/\s*\([^)]*\)\s*/g, '');
-    setInputValue(titleWithoutParentheses);
+    setInputValue(suggestion.title);
+    //   const titleWithoutParentheses = suggestion.title.replace(/\s*\([^)]*\)\s*/g, '');
+    //   setInputValue(titleWithoutParentheses);
     setSuggestions([]);
   };
