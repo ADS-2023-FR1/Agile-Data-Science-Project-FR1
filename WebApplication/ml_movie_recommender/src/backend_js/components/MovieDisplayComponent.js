@@ -5,10 +5,10 @@ const MovieDisplay = ({ movies , handleDeleteMovie }) => {
     <div className="movie-list">
       <h2>Movie List:</h2>
       <ul>
-        {movies.map((movie, index) => (
-          <li key={movie.id}>
+        {movies.map((movie) => (
+          <li key={movie.movieId}>
             <span>{movie.title}</span>
-            <button onClick={() => handleDeleteMovie(movie.id)} className="btn">Delete</button>
+            <button onClick={() => handleDeleteMovie(movie.movieId)} className="btn">Delete</button>
           </li>
         ))}
       </ul>

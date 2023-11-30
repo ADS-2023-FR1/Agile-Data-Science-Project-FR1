@@ -26,8 +26,7 @@ function MovieList() {
   };
 
   const handleDeleteMovie = (id) => {
-    const newMovies = movies.filter((movie) => movie.id !== id);
-    setMovies(newMovies);
+    setMovies( currentMovies => currentMovies.filter( movie => movie.movieId !== id));
   };
 
   const handleGetRecommendation = async () => {
