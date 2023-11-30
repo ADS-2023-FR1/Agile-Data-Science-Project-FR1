@@ -60,7 +60,45 @@ Incorporate user feedback as a qualitative measure of your recommender system's 
 
 By following these steps, you can systematically evaluate the effectiveness of your movie recommender system using the IMDb movie database. Regularly update and refine your system based on evaluation results and user feedback to ensure continuous improvement in recommendation accuracy and user satisfaction.
 
+## Evaluation in our case - movielense 100k database
 
+In our case, we have performed different evaluation experiments with the scores provided by Spotlight. 
+
+These are the results:
+
+Sequential:
+
+ 'mean_precision': 0.056295620437956204,
+ 'precision_std': 0.11018630630712584,
+ 'mean_recall': 0.056295620437956204,
+ 'recall_std': 0.11018630630712584,
+ 'mrr_mean': 0.05081374909310326,
+ 'mrr_std': 0.14060858935239787}
+
+
+Implicit:
+
+ 'mean_precision': 0.47889908256880737,
+ 'precision_std': 0.22466014883869043,
+ 'mean_recall': 0.0734139089210515,
+ 'recall_std': 0.05930864354597846,
+ 'mrr_mean': 0.03468292471541635,
+ 'mrr_std': 0.024673809548225196}
+
+Explicit:
+
+
+'mean_precision': 0.26222222222222225,
+ 'precision_std': 0.2445302879571262,
+ 'mean_recall': 0.032389984964951116,
+ 'recall_std': 0.027798234725610108,
+ 'mrr_mean': 0.017774100084189223,
+ 'mrr_std': 0.012817271594728653}
+
+
+And this is the overall conclusion:
+
+After training all models (without hyperparameter tuning) on the 100K mobielens data, the best performance comes from the implicit factorizer model. Still the mean mrr is best for the sequential model but there are lost of variability in its predictions.
 
 
 
