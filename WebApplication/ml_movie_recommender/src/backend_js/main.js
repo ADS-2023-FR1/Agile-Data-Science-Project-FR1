@@ -25,6 +25,11 @@ function MovieList() {
     addMovie(movies, setMovies, inputValue, setInputValue, setErrorMessage);
   };
 
+  const handleDeleteMovie = (id) => {
+    const newMovies = movies.filter((movie) => movie.id !== id);
+    setMovies(newMovies);
+  };
+
   const handleGetRecommendation = async () => {
     getRecommendation(movies, setRecommendations, setErrorMessage);
   };
@@ -50,7 +55,7 @@ function MovieList() {
         handleSuggestionClick={handleSuggestionClick}
       />
       <ErrorComponent errorMessage={errorMessage} />
-      <MovieDisplay movies={movies} />
+      <MovieDisplay movies={movies}  handleDeleteMovie={handleDeleteMovie}/>
       <button onClick={handleGetRecommendation} className="get-recommendation-button">
         Get Recommendation
       </button>
