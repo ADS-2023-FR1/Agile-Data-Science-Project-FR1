@@ -1,11 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
+To run the flask server: 
+cd to WebApplication/ml_movie_recommender/src/backend_model
+### python app.py runserver 8000
 
-In the project directory, you can run:
-
+To run the js server: 
+cd to WebApplication/ml_movie_recommender/src
 ### `npm start`
 
 Runs the app in the development mode.\
