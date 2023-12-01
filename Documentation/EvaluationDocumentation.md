@@ -98,7 +98,7 @@ Explicit:
 
 And this is the overall conclusion:
 
-After training all models (without hyperparameter tuning) on the 100K mobielens data, the best performance comes from the implicit factorizer model. Still the mean mrr is best for the sequential model but there are lost of variability in its predictions.
+After training all models (without hyperparameter tuning) on the 100K mobielens data, the best performance comes from the implicit factorizer model. Still the mean mrr is best for the sequential model but there are lots of variability in its predictions.
 
 
 
