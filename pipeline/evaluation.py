@@ -11,7 +11,7 @@ def evaluate_model(model, test, config):
     """This function evaluates the metric agreed by the team.
     At the moment we have not decided which ones so I just pick 2 as an example."""
     from spotlight.evaluation import mrr_score, precision_recall_score, rmse_score, sequence_mrr_score, sequence_precision_recall_score
-    
+
     if config['model']=='factorizer':
         eval = {"mrr": mrr_score(model, test), "precision_recall": precision_recall_score(model, test), "rmse": rmse_score(model, test),
                 #"sequence_mrr":sequence_mrr_score(model, test), "sequence_precision_recall": sequence_precision_recall_score(model, test)
@@ -59,6 +59,9 @@ train, test = user_based_train_test_split(data)
 train = train.to_sequence()
 test = test.to_sequence()
 
+print(train)
+print(test)
+
 # select model, tran and evaluate
 
 with mlflow.start_run():
@@ -67,4 +70,4 @@ with mlflow.start_run():
     model1.fit(train)
 
     eval = evaluate_model(model1, test, config)
-    eval
+    print(eval)
