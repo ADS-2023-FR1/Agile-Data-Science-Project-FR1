@@ -1,7 +1,7 @@
 
 
 export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
-    if (movies.length < 2) {
+    if (movies.length < 5) {
       if (inputValue.trim() !== '') {
         setMovies([...movies, inputValue]);
         setInputValue('');
@@ -10,7 +10,7 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
         setErrorMessage('Please enter a movie name');
       }
     } else {
-      setErrorMessage('You can only add up to 2 movies');
+      setErrorMessage('You can only add up to 5 movies');
     }
   };
   
