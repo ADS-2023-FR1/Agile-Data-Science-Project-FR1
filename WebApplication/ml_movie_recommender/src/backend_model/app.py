@@ -18,7 +18,7 @@ def get_recommendation():
         titles = request.args.getlist('title')
         print(titles)
         
-        model_path = "testmodel"  # Replace this with your model path
+        model_path = "trained_model.zip"  # Replace this with your model path
         
         recommendation = recommend_new_sequence(titles, model_path)  # Pass both titles and model_path
 

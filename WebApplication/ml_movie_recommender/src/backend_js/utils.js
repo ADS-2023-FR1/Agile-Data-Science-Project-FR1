@@ -10,14 +10,17 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
         setErrorMessage('Please enter a movie name');
       }
     } else {
-      setErrorMessage('You can only add up to 5 movies');
+      setErrorMessage('You can only add up to 2 movies');
     }
   };
   
   export const getRecommendation = async (movies, setRecommendations, setErrorMessage) => {
     if (movies.length > 0) {
       try {
-        const response = await fetch(`http://localhost:5000/getRecommendation?title=${movies.join('&title=')}`);
+        // Encode each movie title before joining them in the URL
+        const encodedTitles = movies.map(title => encodeURIComponent(title));
+        
+        const response = await fetch(`http://localhost:5000/getRecommendation?title=${encodedTitles.join('&title=')}`);
         if (!response.ok) {
           throw new Error('Failed to fetch recommendations');
         }
@@ -31,6 +34,7 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
       setErrorMessage('Please add movies before getting recommendations');
     }
   };
+  
   
   export const handleChange = (event, setInputValue) => {
     setInputValue(event.target.value);
@@ -55,7 +59,6 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   };
   
   export const suggestionClick = (suggestion, setInputValue, setSuggestions) => {
-    const titleWithoutParentheses = suggestion.title.replace(/\s*\([^)]*\)\s*/g, '');
-    setInputValue(titleWithoutParentheses);
+    setInputValue(suggestion.title);
     setSuggestions([]);
   };
