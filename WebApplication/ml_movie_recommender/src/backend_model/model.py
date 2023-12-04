@@ -27,7 +27,7 @@ def get_movie_title(movie_id):
     movies = pd.read_csv('moviesForModel.csv')
     return movies['title'][movies['movieId']==movie_id].values[0]
 
-def recommend_new_sequence(movies, model_path, n_recom=5):
+def recommend_new_sequence(movies, model_path, n_recom=20):
     """
     Receives a trained model path, a sequence of movie titles,
     associates them to a movielens ID

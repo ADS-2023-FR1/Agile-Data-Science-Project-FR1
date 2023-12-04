@@ -1,27 +1,49 @@
+import movieData from './movieTitle.json'
 
-//Function for adding movie to array. 
 export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
-    if (movies.length < 5) {
-      if (inputValue.trim() !== '') {
-        setMovies([...movies, inputValue]);
-        setInputValue('');
-        setErrorMessage('');
+  if (movies.length < 5) {
+    if (inputValue.trim() !== '') {
+      const movieAlreadyInList = movies.some((movie) =>
+        movie.title.toLowerCase() === inputValue.toLowerCase()
+      );
+      if(movieAlreadyInList === false){
+        const movieExists = movieData.some((movie) =>
+          movie.title.toLowerCase() === inputValue.toLowerCase()
+        );
+        if (movieExists) {
+          const movie = movieData.find((movie) =>
+              movie.title.toLowerCase() === inputValue.toLowerCase()
+          );
+          setMovies([...movies, movie]);
+          setInputValue('');
+          setErrorMessage('');
+        } else {
+          setErrorMessage('Movie not found in database');
+        }
       } else {
-        setErrorMessage('Please enter a movie name');
+        setErrorMessage('Movie already exists in the list');
       }
     } else {
-      setErrorMessage('You can only add up to 5 movies');
+      setErrorMessage('Please enter a movie name');
     }
-  };
+  } else {
+    setErrorMessage('You can only add up to 5 movies');
+  }
+};
   
-  //function to send an array of movies to the model side
+
   export const getRecommendation = async (movies, setRecommendations, setErrorMessage) => {
     if (movies.length > 0) {
       try {
-        // Encode each movie title before joining them in the URL
-        const encodedTitles = movies.map(title => encodeURIComponent(title));
+        const modifiedMovies = movies.map(movie => {
+          const indexOfOpeningParenthesis = movie.title.indexOf('(');
+          return movie.title.slice(0, indexOfOpeningParenthesis-1)//.replace(/\s/g, '');
+        });
         
-        const response = await fetch(`http://localhost:5000/getRecommendation?title=${encodedTitles.join('&title=')}`);
+        const result = modifiedMovies.join('&title=');
+        
+        // const response = await fetch(`http://localhost:5000/getRecommendation?title=${movies.join('&title=')}`);
+        const response = await fetch(`http://localhost:5000/getRecommendation?title=`+ result);
         if (!response.ok) {
           throw new Error('Failed to fetch recommendations');
         }
@@ -61,5 +83,7 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   
   export const suggestionClick = (suggestion, setInputValue, setSuggestions) => {
     setInputValue(suggestion.title);
+    //   const titleWithoutParentheses = suggestion.title.replace(/\s*\([^)]*\)\s*/g, '');
+    //   setInputValue(titleWithoutParentheses);
     setSuggestions([]);
   };

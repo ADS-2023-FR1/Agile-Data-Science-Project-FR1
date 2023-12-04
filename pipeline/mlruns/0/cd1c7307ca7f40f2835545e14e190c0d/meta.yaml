@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/cd1c7307ca7f40f2835545e14e190c0d/artifacts
+end_time: 1701431589524
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cd1c7307ca7f40f2835545e14e190c0d
+run_name: zealous-snail-356
+run_uuid: cd1c7307ca7f40f2835545e14e190c0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701431586172
+status: 3
+tags: []
+user_id: edge
