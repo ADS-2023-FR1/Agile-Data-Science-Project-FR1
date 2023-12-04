@@ -36,8 +36,8 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
     if (movies.length > 0) {
       try {
         const modifiedMovies = movies.map(movie => {
-          const indexOfOpeningParenthesis = movie.indexOf('(');
-          return indexOfOpeningParenthesis !== -1 ? movie.slice(indexOfOpeningParenthesis + 1) : movie;
+          const indexOfOpeningParenthesis = movie.title.indexOf('(');
+          return movie.title.slice(0, indexOfOpeningParenthesis-1)//.replace(/\s/g, '');
         });
         
         const result = modifiedMovies.join('&title=');
