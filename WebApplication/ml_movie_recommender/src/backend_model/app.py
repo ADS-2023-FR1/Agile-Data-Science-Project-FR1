@@ -11,7 +11,8 @@ from model import get_movie_id, get_movie_title, recommend_new_sequence
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
-
+## When we send a array of movies from the js backend we tell the model backend to take those movies and fed them to the model
+## and send back the model response/recommendations. 
 @app.route('/getRecommendation', methods=['GET'])
 def get_recommendation():
     if 'title' in request.args:

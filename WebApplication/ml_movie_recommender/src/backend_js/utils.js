@@ -1,5 +1,5 @@
 
-
+//Function for adding movie to array. 
 export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
     if (movies.length < 5) {
       if (inputValue.trim() !== '') {
@@ -14,6 +14,7 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
     }
   };
   
+  //function to send an array of movies to the model side
   export const getRecommendation = async (movies, setRecommendations, setErrorMessage) => {
     if (movies.length > 0) {
       try {
