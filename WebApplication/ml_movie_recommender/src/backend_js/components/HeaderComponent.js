@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../style/header.css'; 
-
+//header component, returns the top navigation menu bar. 
 const Header = () => {
   return (
     <header className="header">

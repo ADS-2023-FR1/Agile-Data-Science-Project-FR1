@@ -21,6 +21,12 @@ function MovieList() {
   const [recommendations, setRecommendations] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
 
+  const handleRemoveMovie = (index) => {
+    const updatedMovies = [...movies];
+    updatedMovies.splice(index, 1);
+    setMovies(updatedMovies);
+  };
+
   const handleAddMovie = () => {
     addMovie(movies, setMovies, inputValue, setInputValue, setErrorMessage);
   };

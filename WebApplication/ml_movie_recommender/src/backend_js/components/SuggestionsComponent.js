@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../style/Suggestions.css';
 
+//the input suggestion box that appears below the input field. 
+
 const Suggestions = ({ suggestions, handleSuggestionClick }) => {
   return (
     <div className="suggestions-container">
