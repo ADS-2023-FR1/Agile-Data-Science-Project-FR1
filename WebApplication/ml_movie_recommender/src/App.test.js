@@ -81,6 +81,18 @@ describe('getRecommendation function', () => {
     setErrorMessage = jest.fn();
   });
 
+  function generateRecommendations(count) {
+    const recommendations = [];
+    for (let i = 1; i <= count; i++) {
+      recommendations.push(`Recommendation ${i}`);
+    }
+    return recommendations;
+  }
+  
+  // Generate recommendations with count as 20
+  const recommendationsArray = generateRecommendations(20);
+  
+
   test('handles empty movies list', async () => {
     await getRecommendation([], setRecommendations, setErrorMessage);
 
@@ -103,13 +115,7 @@ describe('getRecommendation function', () => {
         ok: true,
         json: () =>
           Promise.resolve({
-            recommendation: [
-              'Recommendation 1', 'Recommendation 2', 'Recommendation 3', 'Recommendation 4',
-              'Recommendation 5', 'Recommendation 6', 'Recommendation 7', 'Recommendation 8',
-              'Recommendation 9', 'Recommendation 10', 'Recommendation 11', 'Recommendation 12',
-              'Recommendation 13', 'Recommendation 14', 'Recommendation 15', 'Recommendation 16',
-              'Recommendation 17', 'Recommendation 18', 'Recommendation 19', 'Recommendation 20',
-            ],
+            recommendation: generateRecommendations(20),
           }),
       })
     );
@@ -120,13 +126,7 @@ describe('getRecommendation function', () => {
     expect(fetch).toHaveBeenCalledWith(
       'http://localhost:5000/getRecommendation?title=Inception&title=The Dark Knight&title=Interstellar&title=Pulp Fiction&title=The Shawshank Redemption'
     );
-    expect(setRecommendations).toHaveBeenCalledWith([
-      'Recommendation 1', 'Recommendation 2', 'Recommendation 3', 'Recommendation 4',
-      'Recommendation 5', 'Recommendation 6', 'Recommendation 7', 'Recommendation 8',
-      'Recommendation 9', 'Recommendation 10', 'Recommendation 11', 'Recommendation 12',
-      'Recommendation 13', 'Recommendation 14', 'Recommendation 15', 'Recommendation 16',
-      'Recommendation 17', 'Recommendation 18', 'Recommendation 19', 'Recommendation 20',
-    ]);
+    expect(setRecommendations).toHaveBeenCalledWith(recommendation);
     expect(setErrorMessage).not.toHaveBeenCalled();
   });
 
