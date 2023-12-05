@@ -45,7 +45,8 @@ class TestGetMovieTitle(unittest.TestCase):
     Tests get id out of range of moviesForModel.csv
     """
     def test_non_existing_movie_id(self):
-        non_existing_movie_id = 4000
+
+        non_existing_movie_id = random.randint(3952, 4500)
         try:
             movie_title = get_movie_title(non_existing_movie_id)
             self.assertIsNone(movie_title, "Expected None for non-existing movie ID")
