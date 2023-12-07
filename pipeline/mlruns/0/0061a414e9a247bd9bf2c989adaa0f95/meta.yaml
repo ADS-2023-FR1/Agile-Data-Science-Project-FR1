@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/0061a414e9a247bd9bf2c989adaa0f95/artifacts
+end_time: 1701964471935
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0061a414e9a247bd9bf2c989adaa0f95
+run_name: defiant-doe-404
+run_uuid: 0061a414e9a247bd9bf2c989adaa0f95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701964468578
+status: 4
+tags: []
+user_id: edge
