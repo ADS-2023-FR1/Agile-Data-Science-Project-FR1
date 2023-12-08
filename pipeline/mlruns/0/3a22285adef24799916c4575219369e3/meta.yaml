@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/3a22285adef24799916c4575219369e3/artifacts
+end_time: 1701964562559
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3a22285adef24799916c4575219369e3
+run_name: bittersweet-slug-980
+run_uuid: 3a22285adef24799916c4575219369e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701964555358
+status: 3
+tags: []
+user_id: edge

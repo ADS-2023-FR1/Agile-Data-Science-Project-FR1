@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/56e0dad83ff043fa92ca5db366cb47c8/artifacts
+end_time: 1701963333256
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 56e0dad83ff043fa92ca5db366cb47c8
+run_name: upset-fish-781
+run_uuid: 56e0dad83ff043fa92ca5db366cb47c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701963330175
+status: 4
+tags: []
+user_id: edge
