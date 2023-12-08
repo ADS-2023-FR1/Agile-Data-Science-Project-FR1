@@ -45,4 +45,3 @@ def evaluate_model(model, test, config):
                  "mean_recall":eval['precision_recall'][1].mean(), "recall_std": eval['precision_recall'][1].std(), 
                  "mrr_mean": eval['mrr'].mean(), "mrr_std": eval['mrr'].std()})
     return eval
-
