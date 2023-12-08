@@ -1,6 +1,6 @@
 # Readme for the pipeline folder
 
-## Summary of `user_interaction.py`
+## Summary of `user_interactions.py`
 
 It contains some functions needed to interpret inputs and outputs of the recomender through movielens data.
 These funtions depend on two files: **links.csv** and **movies.csv** for codifying and decodifying IDs and titles.
@@ -10,8 +10,9 @@ Finally, there is the `recommend_new_sequence(movies, model_path, n_recom=5)` fu
 and a sequence of titles retrieves new recomendations for that sequence. If you work within this directory you
 could just import user_interactions as ui and use them.
 
-Further improvements could be done, specifically in the `get_movie_id(title)` function as the user may misspell
-or put a variety of diferent imputs that is not yet taken into account. This could be a task for future sprints.	
+There has been an update to `get_movie_id(title)` and . The bug where movies were not in the database was fixed. Nouw this 
+function receives an extra argument: a dictionary specifying which data size from movieles the model was trained in.
+It depends on a directory locted in /Data: `~/Data/movie_links_library`.
 
 ## Summary of `settings_definition.py`
 

@@ -1,6 +1,11 @@
 
 # This is the ReadMe for the Data used in the project
 
+### Directory: movie_links_linrary
+
+The newly updated user interactions (08/12/2023) make use of this directory to acces the titles and IDs from movielens for different dataset sizes. 
+It contains the links between movies and IDs.
+
 ### Data provided by Spotlight
 
 [Spotlight](https://maciejkula.github.io/spotlight/index.html) offers 3 different kind of popular rating datasets provided as modules: 
