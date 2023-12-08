@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/c5eab875ed1a414c8416ddce122b4e77/artifacts
+end_time: 1701967506630
+entry_point_name: ''
+experiment_id: '643726634236529072'
+lifecycle_stage: active
+run_id: c5eab875ed1a414c8416ddce122b4e77
+run_name: unequaled-fowl-443
+run_uuid: c5eab875ed1a414c8416ddce122b4e77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701967502045
+status: 3
+tags: []
+user_id: edge

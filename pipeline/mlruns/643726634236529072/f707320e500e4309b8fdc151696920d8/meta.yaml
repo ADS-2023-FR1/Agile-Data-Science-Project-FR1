@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/f707320e500e4309b8fdc151696920d8/artifacts
+end_time: 1701967913042
+entry_point_name: ''
+experiment_id: '643726634236529072'
+lifecycle_stage: active
+run_id: f707320e500e4309b8fdc151696920d8
+run_name: delicate-chimp-393
+run_uuid: f707320e500e4309b8fdc151696920d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701967908518
+status: 3
+tags: []
+user_id: edge
