@@ -3,6 +3,7 @@
 ## Available Scripts
 To run the flask server: 
 cd to WebApplication/ml_movie_recommender/src/backend_model
+
 ### `python app.py runserver 8000`
 
 To run the tests for the python backend
