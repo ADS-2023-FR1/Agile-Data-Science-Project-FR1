@@ -11,7 +11,13 @@ and a sequence of titles retrieves new recomendations for that sequence. If you 
 could just import user_interactions as ui and use them.
 
 Further improvements could be done, specifically in the `get_movie_id(title)` function as the user may misspell
-or put a variety of diferent imputs that is not yet taken into account. This could be a task for future sprints.	
+or put a variety of diferent imputs that is not yet taken into account. This could be a task for future sprints.
+
+A function for adding new users to the training data is `create_mock_user(data, movie_ids, ratings, save=False)`.
+It adds a new user to teh data based on the given ratings, and movie_ids. 
+
+Also `update_existing_user(data, movie_ids, ratings, user)` allows for updating the training data. However,
+for actually updating the factorizers models need to be retrained from scratch with the whole updated data.
 
 ## Summary of `settings_definition.py`
 
@@ -48,3 +54,17 @@ Putting the funtions in `settings_definition.py` to use comparing the metrics of
 
 It is an already trained model. At the moment, it is an implicit sequence model trained during 10 iters.
 The specifications of the model can be seen in config.json, following the default definition.
+
+## Summary of `factorizer_model_mockuserid6041`
+
+It is an already trained implicit factorizer model on the 1M movielens data. The already loded films and ratings are: 
+
+		movie_ids = [23,44,32,55,66,77,8,10,14]
+		ratings =   [2.,3.,4.,5.,2.,1.,5.,4.,4.]
+
+The mock user id is: 6041.
+
+## Summary of `update_script.py`
+
+This might not be need but is a scrit exemplifiying what needs to be done in case
+we wanted to update the films watched by the mock user.
