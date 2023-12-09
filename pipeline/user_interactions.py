@@ -59,3 +59,51 @@ def recommend_new_sequence(movies, model_path, n_recom=5):
     titles = [get_movie_title(b+1) for b in best_movie_ids]
     return titles
 
+
+def create_mock_user(data, movie_ids, ratings, save=False):
+    '''
+    Function that adds a user with the given
+    ratings a movies ids to the already existing 
+    data.
+
+    data: must be of interactions class.
+    movie_ids: is the ids of the movies in the given data.
+    ratings: are the ratings of those movies.
+    
+    Returns the modfied data, a the new user's id.
+    '''
+    
+    if len(movie_ids)!=len(ratings):
+        print("Mismatching lengths: movie_ids with ratings")
+        return data
+    
+    data.user_ids = np.concatenate((data.user_ids,[data.num_users for i in movie_ids]))
+    data.item_ids = np.concatenate((data.item_ids,movie_ids))
+    data.ratings = np.concatenate((data.ratings,ratings))
+    data.num_users = data.num_users+1
+    
+    if save:
+        print('')
+    return data, data.user_ids[-1]
+
+def update_existing_user(data, movie_ids, ratings, user):
+    '''
+    Function that adds a new user ratings to the
+    training data.
+
+    data: must be of interactions class.
+    movie_ids: is the ids of the movies in the given data.
+    ratings: are the ratings of those movies.
+    
+    Returns the modfied data.
+    '''
+    
+    if len(movie_ids)!=len(ratings):
+        print("Mismatching lengths: movie_ids with ratings")
+        return data
+    
+    data.user_ids = np.concatenate((data.user_ids,[user for i in movie_ids]))
+    data.item_ids = np.concatenate((data.item_ids,movie_ids))
+    data.ratings = np.concatenate((data.ratings,ratings))
+
+    return data
