@@ -16,7 +16,7 @@ Once having copied the github repository, open a terminal inside
 ```
 then execute
 ```
-python setup.py build / python setup.py install
+python setup.py build; python setup.py install
 ```		
 
 
