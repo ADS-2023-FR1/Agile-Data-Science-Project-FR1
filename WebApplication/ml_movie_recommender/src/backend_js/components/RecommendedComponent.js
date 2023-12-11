@@ -18,7 +18,7 @@ const RecommendedMovies = ({ recommendations, moviesToShow, handleShowMore }) =>
         ))}
       </div>
       {moviesToShow < recommendations.length && (
-        <button onClick={handleShowMore}>Show 5 more</button>
+        <button onClick={handleShowMore}>Show more results</button>
       )}
     </div>
   );
