@@ -35,15 +35,15 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   export const getRecommendation = async (movies, setRecommendations, setErrorMessage) => {
     if (movies.length > 0) {
       try {
-        /*const modifiedMovies = movies.map(movie => {
+        const modifiedMovies = movies.map(movie => {
           const indexOfOpeningParenthesis = movie.title.indexOf('(');
           return movie.title.slice(0, indexOfOpeningParenthesis-1)//.replace(/\s/g, '');
         });
         
         const result = modifiedMovies.join('&title=');
-        */
-        const response = await fetch(`http://localhost:5000/getRecommendation?title=${movies.join('&title=')}`);
-        //const response = await fetch(`http://localhost:5000/getRecommendation?title=`+ result);
+        
+        // const response = await fetch(`http://localhost:5000/getRecommendation?title=${movies.join('&title=')}`);
+        const response = await fetch(`http://localhost:8000/getRecommendation?title=`+ result);
         if (!response.ok) {
           throw new Error('Failed to fetch recommendations');
         }
