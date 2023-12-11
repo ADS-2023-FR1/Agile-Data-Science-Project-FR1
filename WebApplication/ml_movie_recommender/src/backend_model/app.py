@@ -20,7 +20,11 @@ def get_recommendation():
 
         # Sending the recommendation back via JSON response
         print(recommendation)
-        return jsonify({'recommendation': recommendation}), 200
+        response = jsonify({'recommendation': recommendation})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', '*')
+        response.headers.add('Content-Type', 'application/json')
+        return response, 200 #jsonify({'recommendation': recommendation}), 200
     else:
         return jsonify({'error': 'Title not provided'}), 400
 
@@ -47,4 +51,4 @@ def get_recommendation_factorial():
     else:
         return jsonify({'error': 'User ID not provided'}), 400
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=8000,debug=True)
