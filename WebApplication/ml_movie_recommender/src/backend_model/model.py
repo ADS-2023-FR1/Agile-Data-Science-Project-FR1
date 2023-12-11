@@ -42,3 +42,18 @@ def recommend_new_sequence(movies, model_path, n_recom=20):
     best_movie_ids = indices[np.argsort(pred[indices])]
     titles = [get_movie_title(b+1) for b in best_movie_ids]  # Assuming movie IDs start from 1
     return titles
+
+def recommend_new_factorial(user_id, model_path, n_recom=5):
+    """
+    Receives a trained model path, a sequence of movie titles,
+    associates them to a movielens ID
+    and then predicst n_recoms new movies
+    for the user and returns their titles.
+    """
+    spotlight_model = torch.load(model_path) # Load model
+    
+    pred = spotlight_model.predict(user_id)
+    indices = np.argpartition(pred, -n_recom)[-n_recom:] 
+    best_movie_ids = indices[np.argsort(pred[indices])]
+    titles = [get_movie_title(b+1) for b in best_movie_ids]
+    return titles
