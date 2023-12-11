@@ -43,7 +43,7 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
         const result = modifiedMovies.join('&title=');
         
         // const response = await fetch(`http://localhost:5000/getRecommendation?title=${movies.join('&title=')}`);
-        const response = await fetch(`http://localhost:5000/getRecommendation?title=`+ result);
+        const response = await fetch(`http://localhost:8000/getRecommendation?title=`+ result);
         if (!response.ok) {
           throw new Error('Failed to fetch recommendations');
         }
