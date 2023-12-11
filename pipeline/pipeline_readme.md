@@ -68,3 +68,19 @@ The mock user id is: 6041.
 
 This might not be need but is a scrit exemplifiying what needs to be done in case
 we wanted to update the films watched by the mock user.
+
+## Summary of `requirements.txt`
+
+It's a list of all the imports that need to be done to run the code. They all can be installed with `conda install -y --file requirements.txt` .
+With this and `python setup.py build ; python setup.py install` in the spotlight directory, everything can be run.
+This is what is performed in the github server to run the tests.
+
+## Summary of `test_models.py`
+
+Code with the tests that will be automatically perfomed at each push to main and dev with the github actions.
+At the moment, the only tests we run are predicting with the saved sequence model and with the factorizer.
+Even though they might seem simple, it ensures there is no major issue with our main functionalities and the back end and front should be able to use it properly.
+
+## Summary of `trained_model_sequence` and `trained_model_factorizer`
+
+To run the tests, it is important to keep the two models separated, so that the code does not get confused. This two models are examples.
