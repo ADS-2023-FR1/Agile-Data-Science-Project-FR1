@@ -7,7 +7,7 @@ from settings_definition import *
 def test_seq_prediction():
     
     
-    model_path = "../pipeline/trained_model_sequence"
+    model_path = "../pipeline/trained_model"
     n_recom = 5
     movies = np.array(['Sabrina', 'Mortal Kombat'])
     
