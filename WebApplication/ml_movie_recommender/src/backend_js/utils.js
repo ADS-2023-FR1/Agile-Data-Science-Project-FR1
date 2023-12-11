@@ -37,12 +37,11 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
       try {
         const modifiedMovies = movies.map(movie => {
           const indexOfOpeningParenthesis = movie.title.indexOf('(');
-          return movie.title.slice(0, indexOfOpeningParenthesis-1)//.replace(/\s/g, '');
+          return movie.title.slice(0, indexOfOpeningParenthesis-1)
         });
         
         const result = modifiedMovies.join('&title=');
         
-        // const response = await fetch(`http://localhost:5000/getRecommendation?title=${movies.join('&title=')}`);
         const response = await fetch(`http://localhost:8000/getRecommendation?title=`+ result);
         if (!response.ok) {
           throw new Error('Failed to fetch recommendations');
@@ -83,7 +82,5 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   
   export const suggestionClick = (suggestion, setInputValue, setSuggestions) => {
     setInputValue(suggestion.title);
-    //   const titleWithoutParentheses = suggestion.title.replace(/\s*\([^)]*\)\s*/g, '');
-    //   setInputValue(titleWithoutParentheses);
     setSuggestions([]);
   };

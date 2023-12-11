@@ -20,11 +20,16 @@ function MovieList() {
   const [errorMessage, setErrorMessage] = useState('');
   const [recommendations, setRecommendations] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
+  const [moviesToShow, setMoviesToShow] = useState(5);
 
   const handleRemoveMovie = (index) => {
     const updatedMovies = [...movies];
     updatedMovies.splice(index, 1);
     setMovies(updatedMovies);
+  };
+
+  const handleShowMore = () => {
+    setMoviesToShow(moviesToShow + 5);
   };
 
   const handleAddMovie = () => {
@@ -64,7 +69,7 @@ function MovieList() {
       <button onClick={handleGetRecommendation} className="get-recommendation-button">
         Get Recommendation
       </button>
-      <RecommendedMovies recommendations={recommendations} />
+      <RecommendedMovies recommendations={recommendations}  moviesToShow={moviesToShow} handleShowMore={handleShowMore}/>
     </div>
   );
 }
