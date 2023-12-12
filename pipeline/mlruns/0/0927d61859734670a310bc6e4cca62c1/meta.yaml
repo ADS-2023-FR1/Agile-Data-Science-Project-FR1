@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/0927d61859734670a310bc6e4cca62c1/artifacts
+end_time: 1701964155958
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0927d61859734670a310bc6e4cca62c1
+run_name: exultant-dove-168
+run_uuid: 0927d61859734670a310bc6e4cca62c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701964152893
+status: 4
+tags: []
+user_id: edge

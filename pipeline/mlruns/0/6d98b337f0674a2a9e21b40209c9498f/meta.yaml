@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/6d98b337f0674a2a9e21b40209c9498f/artifacts
+end_time: 1701964195335
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6d98b337f0674a2a9e21b40209c9498f
+run_name: capable-moose-227
+run_uuid: 6d98b337f0674a2a9e21b40209c9498f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701964192166
+status: 4
+tags: []
+user_id: edge

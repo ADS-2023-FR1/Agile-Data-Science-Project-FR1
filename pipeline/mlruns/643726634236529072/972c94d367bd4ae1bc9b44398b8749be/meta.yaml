@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/972c94d367bd4ae1bc9b44398b8749be/artifacts
+end_time: 1701967898061
+entry_point_name: ''
+experiment_id: '643726634236529072'
+lifecycle_stage: active
+run_id: 972c94d367bd4ae1bc9b44398b8749be
+run_name: efficient-whale-559
+run_uuid: 972c94d367bd4ae1bc9b44398b8749be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701967890190
+status: 3
+tags: []
+user_id: edge

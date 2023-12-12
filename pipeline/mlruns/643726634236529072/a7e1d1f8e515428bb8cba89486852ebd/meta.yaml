@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/a7e1d1f8e515428bb8cba89486852ebd/artifacts
+end_time: 1701967218249
+entry_point_name: ''
+experiment_id: '643726634236529072'
+lifecycle_stage: active
+run_id: a7e1d1f8e515428bb8cba89486852ebd
+run_name: respected-slug-937
+run_uuid: a7e1d1f8e515428bb8cba89486852ebd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701967214213
+status: 3
+tags: []
+user_id: edge

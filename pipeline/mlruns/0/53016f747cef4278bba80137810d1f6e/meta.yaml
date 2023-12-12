@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/53016f747cef4278bba80137810d1f6e/artifacts
+end_time: 1701965083568
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 53016f747cef4278bba80137810d1f6e
+run_name: hilarious-lynx-644
+run_uuid: 53016f747cef4278bba80137810d1f6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701965080387
+status: 4
+tags: []
+user_id: edge

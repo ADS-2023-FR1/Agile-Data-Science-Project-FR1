@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/218e204a5e4e4ab2b1e4498c9bdb317a/artifacts
+end_time: 1701964239779
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 218e204a5e4e4ab2b1e4498c9bdb317a
+run_name: enthused-newt-619
+run_uuid: 218e204a5e4e4ab2b1e4498c9bdb317a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701964235535
+status: 4
+tags: []
+user_id: edge

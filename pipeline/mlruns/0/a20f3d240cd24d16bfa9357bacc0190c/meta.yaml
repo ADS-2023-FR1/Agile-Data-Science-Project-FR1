@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/a20f3d240cd24d16bfa9357bacc0190c/artifacts
+end_time: 1701964530314
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a20f3d240cd24d16bfa9357bacc0190c
+run_name: brawny-hawk-578
+run_uuid: a20f3d240cd24d16bfa9357bacc0190c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701964527049
+status: 4
+tags: []
+user_id: edge

@@ -10,9 +10,16 @@ Finally, there is the `recommend_new_sequence(movies, model_path, n_recom=5)` fu
 and a sequence of titles retrieves new recomendations for that sequence. If you work within this directory you
 could just import user_interactions as ui and use them.
 
+
 There has been an update to `get_movie_id(title)` and . The bug where movies were not in the database was fixed. Nouw this 
 function receives an extra argument: a dictionary specifying which data size from movieles the model was trained in.
 It depends on a directory locted in /Data: `~/Data/movie_links_library`.
+
+A function for adding new users to the training data is `create_mock_user(data, movie_ids, ratings, save=False)`.
+It adds a new user to teh data based on the given ratings, and movie_ids. 
+
+Also `update_existing_user(data, movie_ids, ratings, user)` allows for updating the training data. However,
+for actually updating the factorizers models need to be retrained from scratch with the whole updated data.
 
 ## Summary of `settings_definition.py`
 
@@ -49,3 +56,34 @@ Putting the funtions in `settings_definition.py` to use comparing the metrics of
 
 It is an already trained model. At the moment, it is an implicit sequence model trained during 10 iters.
 The specifications of the model can be seen in config.json, following the default definition.
+
+
+## Summary of `factorizer_model_mockuserid6041`
+
+It is an already trained implicit factorizer model on the 1M movielens data. The already loded films and ratings are: 
+
+		movie_ids = [23,44,32,55,66,77,8,10,14]
+		ratings =   [2.,3.,4.,5.,2.,1.,5.,4.,4.]
+
+The mock user id is: 6041.
+
+## Summary of `update_script.py`
+
+This might not be need but is a scrit exemplifiying what needs to be done in case
+we wanted to update the films watched by the mock user.
+
+## Summary of `requirements.txt`
+
+It's a list of all the imports that need to be done to run the code. They all can be installed with `conda install -y --file requirements.txt` .
+With this and `python setup.py build ; python setup.py install` in the spotlight directory, everything can be run.
+This is what is performed in the github server to run the tests.
+
+## Summary of `test_models.py`
+
+Code with the tests that will be automatically perfomed at each push to main and dev with the github actions.
+At the moment, the only tests we run are predicting with the saved sequence model and with the factorizer.
+Even though they might seem simple, it ensures there is no major issue with our main functionalities and the back end and front should be able to use it properly.
+
+## Summary of `trained_model_sequence` and `trained_model_factorizer`
+
+To run the tests, it is important to keep the two models separated, so that the code does not get confused. This two models are examples.
