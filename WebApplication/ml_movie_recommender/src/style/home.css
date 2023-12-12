@@ -14,8 +14,8 @@
   .main-container {
     position: relative;
     width: calc(1440 * var(--rpx));
-    height: calc(1024 * var(--rpx));
-    margin: 0 auto;
+    height: calc(1024 * var(--rpx)); 
+    margin: 0 0; 
     background: #ffffff;
     overflow: hidden;
   }
@@ -58,7 +58,8 @@
     top: calc(1 * var(--rpx));
     left: calc(1174 * var(--rpx));
     padding: 0 calc(13 * var(--rpx)) 0 calc(13 * var(--rpx));
-    background: #eaeaea;
+    background: #ffffff;
+    /* background: #eaeaea; */
     z-index: 2;
     overflow: hidden;
     border-radius: calc(100 * var(--rpx));
