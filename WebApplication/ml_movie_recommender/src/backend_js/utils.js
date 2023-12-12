@@ -56,7 +56,21 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
       setErrorMessage('Please add movies before getting recommendations');
     }
   };
-  
+
+  export const getRecommendationFactorial = async (setRecommendations, setErrorMessage) => {
+      try {
+        const user_id = "6041";
+        const response = await fetch(`http://localhost:5000/getRecommendationUser?user_id=${user_id}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch recommendations for user');
+        }
+        const data = await response.json();
+        setRecommendations(data.recommendation);
+      } catch (error) {
+        console.error(error);
+        setErrorMessage('Failed to get recommendations');
+      }
+  };
   
   export const handleChange = (event, setInputValue) => {
     setInputValue(event.target.value);
