@@ -9,7 +9,8 @@ const RecommendedMovies = ({ recommendations, moviesToShow, handleShowMore }) =>
         {recommendations.slice(0, moviesToShow).map((movie, index) => (
           <div key={index} className="movie-square">
             <div className="empty-square">
-              <img src={movie.imageUrl} alt={movie} /> {/* feature IMDb img link */}
+              {/* <img src={movie.imageUrl} alt={movie} /> feature IMDb img link */}
+              <img src={require('./../../assets/images/poster-placeholder.png')} alt={movie} /> 
               <div className="title-box">
                 <div className="movie-title">{movie}</div>
               </div>
