@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import RecommendationPage from './backend_js/pages/RecommendationPage';
 import Home from './backend_js/pages/Home';
+import RecommendationPage from './backend_js/pages/RecommendationPage';
+import Login from './backend_js/pages/Login';
 import NoPage from './backend_js/pages/NoPage';
 import reportWebVitals from './reportWebVitals';
 import Header from './backend_js/components/HeaderComponent'
@@ -14,8 +15,9 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route index element={<Home />} />
-                <Route path="/recommendation" element={<RecommendationPage />} />
                 <Route path="/home" element={<Home />} />
+                <Route path="/recommendation" element={<RecommendationPage />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="*" element={<NoPage />} />
             </Routes>
         </BrowserRouter>

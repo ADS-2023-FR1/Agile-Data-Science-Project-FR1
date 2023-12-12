@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 
 function Home(props) {
   return (
+    <>
       <div className='main-container'>
       <div className='section'>
         <span className='text'>MovieRe</span>
-        <Link to="/recommendation">
+        <Link to="/login">
           <div className='group'>
             <span className='text-2'>Log in</span>
             <div className='img' />
@@ -53,6 +54,7 @@ function Home(props) {
       <div className='pic-6' />
       <div className='img-8' />
     </div>
+    </>
   );
 }
 
