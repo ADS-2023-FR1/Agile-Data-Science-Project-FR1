@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/376917009144325532/7eac1c40ba9640f5842a2a8a80a09c06/artifacts
+end_time: 1702316584389
+entry_point_name: ''
+experiment_id: '376917009144325532'
+lifecycle_stage: active
+run_id: 7eac1c40ba9640f5842a2a8a80a09c06
+run_name: painted-dog-883
+run_uuid: 7eac1c40ba9640f5842a2a8a80a09c06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702316576317
+status: 3
+tags: []
+user_id: edge

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/376917009144325532/f45d1514ac704cdca8cdc97e486f9d4f/artifacts
+end_time: 1702316659953
+entry_point_name: ''
+experiment_id: '376917009144325532'
+lifecycle_stage: active
+run_id: f45d1514ac704cdca8cdc97e486f9d4f
+run_name: efficient-quail-729
+run_uuid: f45d1514ac704cdca8cdc97e486f9d4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702316635587
+status: 3
+tags: []
+user_id: edge
