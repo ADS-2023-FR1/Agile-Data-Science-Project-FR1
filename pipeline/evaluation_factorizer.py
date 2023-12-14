@@ -39,8 +39,8 @@ def train(lr=0.01, l2=0.0, n_iter=10):
     # load data
     data = define_dataset(config)
     train, test = user_based_train_test_split(data)
-    train = train.to_sequence()
-    test = test.to_sequence()
+    #train = train.to_sequence()
+    #test = test.to_sequence()
 
     print(train)
     print(test)
