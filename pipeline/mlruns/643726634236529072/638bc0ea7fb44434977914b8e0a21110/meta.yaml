@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/638bc0ea7fb44434977914b8e0a21110/artifacts
+end_time: 1701967933422
+entry_point_name: ''
+experiment_id: '643726634236529072'
+lifecycle_stage: active
+run_id: 638bc0ea7fb44434977914b8e0a21110
+run_name: sassy-hog-674
+run_uuid: 638bc0ea7fb44434977914b8e0a21110
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701967923688
+status: 3
+tags: []
+user_id: edge

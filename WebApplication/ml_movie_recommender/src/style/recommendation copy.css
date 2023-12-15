@@ -1,0 +1,50 @@
+
+.movie-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.movie-list-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.movie-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-list ul li {
+  margin-bottom: 5px;
+}
+
+.get-recommendation-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recommended-movies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recommended-movies ul li {
+  margin-bottom: 5px;
+}
+

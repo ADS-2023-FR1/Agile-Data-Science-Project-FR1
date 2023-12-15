@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1701967898057
+current_stage: None
+description: null
+last_updated_timestamp: 1701967898057
+name: Sequential-Model
+run_id: 972c94d367bd4ae1bc9b44398b8749be
+run_link: null
+source: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/972c94d367bd4ae1bc9b44398b8749be/artifacts/artifacts
+status: READY
+status_message: null
+storage_location: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/972c94d367bd4ae1bc9b44398b8749be/artifacts/artifacts
+user_id: null
+version: 1

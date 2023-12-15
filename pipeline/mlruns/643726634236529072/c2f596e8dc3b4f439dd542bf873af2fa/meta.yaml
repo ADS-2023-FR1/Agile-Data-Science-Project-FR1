@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/c2f596e8dc3b4f439dd542bf873af2fa/artifacts
+end_time: 1701967923660
+entry_point_name: ''
+experiment_id: '643726634236529072'
+lifecycle_stage: active
+run_id: c2f596e8dc3b4f439dd542bf873af2fa
+run_name: loud-stork-348
+run_uuid: c2f596e8dc3b4f439dd542bf873af2fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701967913078
+status: 3
+tags: []
+user_id: edge

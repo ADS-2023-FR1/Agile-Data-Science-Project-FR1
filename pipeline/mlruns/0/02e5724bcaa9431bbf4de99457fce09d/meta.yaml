@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/02e5724bcaa9431bbf4de99457fce09d/artifacts
+end_time: 1701960503093
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 02e5724bcaa9431bbf4de99457fce09d
+run_name: amazing-cub-712
+run_uuid: 02e5724bcaa9431bbf4de99457fce09d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701960499724
+status: 4
+tags: []
+user_id: edge

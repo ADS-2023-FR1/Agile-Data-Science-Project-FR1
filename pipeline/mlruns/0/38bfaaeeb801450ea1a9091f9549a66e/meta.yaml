@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/38bfaaeeb801450ea1a9091f9549a66e/artifacts
+end_time: 1701965067485
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 38bfaaeeb801450ea1a9091f9549a66e
+run_name: blushing-snake-148
+run_uuid: 38bfaaeeb801450ea1a9091f9549a66e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701965064339
+status: 4
+tags: []
+user_id: edge

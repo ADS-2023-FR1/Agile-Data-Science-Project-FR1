@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/376917009144325532/b19c99edcd714b91925bbd7dd759c753/artifacts
+end_time: 1702316589937
+entry_point_name: ''
+experiment_id: '376917009144325532'
+lifecycle_stage: active
+run_id: b19c99edcd714b91925bbd7dd759c753
+run_name: wistful-shrimp-809
+run_uuid: b19c99edcd714b91925bbd7dd759c753
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702316584405
+status: 3
+tags: []
+user_id: edge

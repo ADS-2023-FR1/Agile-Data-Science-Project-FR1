@@ -1,0 +1,142 @@
+.user-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.centered-box {
+  width: 50%;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 150px;
+  height: 800px;
+}
+
+.get-recommendation-button {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #3563e9;
+  border-radius: 50px;
+}
+
+.doc {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.user-pic {
+  display: flex;
+}
+
+
+
+.main-class {
+  display: flex;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  border-bottom: 1px solid black;
+  border: 0.5px solid rgb(223, 220, 220);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  background-color: #f1f1f1;
+  border: 0.5px solid rgb(223, 220, 220);
+  border-radius: 10px;
+  position: relative;
+}
+
+h2 {
+  color: black;
+  font-family: Helvetica Neue, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  font-weight: 700;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-button {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 30px auto;
+  background-color: #3563e9;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.sidebar-button-logout {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 550px auto;
+  background-color: #3563e9;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content-box {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-icon-circle {
+  border-radius: 50%;
+  border: 2px solid #3563e9;
+  padding: 2px;
+}
+
+.user-icon-hover:hover {
+  border-color: #ff5733;
+  transform: scale(1.1);
+}
+
+.sidebar-button:hover,
+.sidebar-button-logout,
+.get-recommendation-button:hover {
+  background-color: #0056b3;
+}
+

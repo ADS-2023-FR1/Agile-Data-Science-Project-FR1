@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/643726634236529072/f6fbbf63444b45749b04a0d6c236f031/artifacts
+end_time: 1701966850509
+entry_point_name: ''
+experiment_id: '643726634236529072'
+lifecycle_stage: active
+run_id: f6fbbf63444b45749b04a0d6c236f031
+run_name: defiant-quail-610
+run_uuid: f6fbbf63444b45749b04a0d6c236f031
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701966845012
+status: 3
+tags: []
+user_id: edge

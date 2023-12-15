@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/0/91d5b3e2c3034cbe852cc84a3937abe4/artifacts
+end_time: 1701965750852
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 91d5b3e2c3034cbe852cc84a3937abe4
+run_name: rebellious-whale-307
+run_uuid: 91d5b3e2c3034cbe852cc84a3937abe4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701965747621
+status: 4
+tags: []
+user_id: edge
