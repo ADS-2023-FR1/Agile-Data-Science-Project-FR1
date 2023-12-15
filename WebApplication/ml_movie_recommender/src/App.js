@@ -6,7 +6,9 @@ import Login from './backend_js/pages/Login';
 import NoPage from './backend_js/pages/NoPage';
 import reportWebVitals from './reportWebVitals';
 import Header from './backend_js/components/HeaderComponent'
+import UserPage from './backend_js/pages/UserPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 
 export default function App() {
@@ -18,6 +20,7 @@ export default function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/recommendation" element={<RecommendationPage />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/userpage" element={<UserPage/>} />
                 <Route path="*" element={<NoPage />} />
             </Routes>
         </BrowserRouter>

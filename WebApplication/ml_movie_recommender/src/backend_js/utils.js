@@ -60,7 +60,7 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   export const getRecommendationFactorial = async (setRecommendations, setErrorMessage) => {
       try {
         const user_id = "6041";
-        const response = await fetch(`http://localhost:5000/getRecommendationUser?user_id=${user_id}`);
+        const response = await fetch(`http://localhost:8000/getRecommendationUser?user_id=${user_id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch recommendations for user');
         }

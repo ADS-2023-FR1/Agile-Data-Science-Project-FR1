@@ -193,6 +193,7 @@ position: absolute; */
     text-align: left;
     white-space: nowrap;
     z-index: 0;
+    color:#3563e9
 }
 .login-box {
     position: relative;
