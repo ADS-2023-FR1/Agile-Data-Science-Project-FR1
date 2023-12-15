@@ -2,7 +2,7 @@
 Created by Joel, Clàudia, Alba, Alejandro, Carl, Maximilian and Sam 
 
 
-
+![Logo](Captura desde 202)
 
 
 
