@@ -3,12 +3,27 @@ import '../../style/login.css';
 
 
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from '../components/HeaderComponent';
 
 const Login = () => {
+
+    useEffect(() => {
+        // Set the title when the component mounts
+        document.title = 'MovieRec';
+        return () => {
+          document.title = 'MovieRec';
+        };
+    
+      }, []);
+
     return (
         <div className='login-main-container'>
-            <span className='login-text'>MovieRe</span>
+            <div className='reco-box'>
+                <Link to="/home">  
+                    <span className='reco-text'>MovieRec</span>
+                </Link>
+            </div>
             <form className='login-wrapper'>
                 <span className='login-text-2'>Login </span>
                 <input className='login-section' type="text" id="username" name="username" placeholder="Username"required />

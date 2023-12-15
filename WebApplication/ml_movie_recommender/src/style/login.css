@@ -36,6 +36,7 @@
     overflow: hidden;
 } */
 .login-text {
+    text-decoration: none;
     display: block;
     position: relative;
     height: calc(44 * var(--lrpx));
