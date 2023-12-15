@@ -1,0 +1,252 @@
+
+ .reco-main-container,
+.reco-main-container * {
+  box-sizing: border-box;
+} 
+body {
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+.reco-main-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0;
+}
+.reco-box {
+  position: relative;
+  width: 100vw;
+  height: 10vh;
+  margin: 0 0; 
+  background: #ffffff;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  z-index: 12;
+  overflow: hidden;
+}
+.reco-text {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #3563e9;
+  font-size: 4vh;
+  font-weight: 700;
+  line-height: 4vh;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.15vw;
+  z-index: 13;
+}
+
+
+
+.reco-group {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  margin: 0 0;
+  background: #f6f7f9;
+  overflow: hidden;
+}
+
+.reco-left-box {
+  position: absolute;
+  height: 78vh;
+  width: 40vw;
+  top: 4.5vh;
+  left: 8vw;
+  background: #ffffff;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.reco-right-box {
+  position: absolute;
+  height: 78vh;
+  width: 40vw;
+  top: 4.5vh;
+  left: 52vw;
+  font-size: 20px;
+  background: #ffffff;
+  z-index: 8;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.reco-text-2 {
+  display: block;
+  position: relative;
+  margin: 24px 0 0 24px;
+  font-family: Plus Jakarta Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #1a202c;
+  font-size: 3.2vh;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.reco-wrapper {
+  position: absolute;
+  width: 282px;
+  height: 65px;
+  top: 686px;
+  left: 173px;
+  background: #3563e9;
+  z-index: 10;
+  border-radius: 50px;
+}
+.reco-text-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 282px;
+  height: 24px;
+  top: 709px;
+  left: 173px;
+  font-family: Plus Jakarta Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 11;
+}
+
+.reco-text-4 {
+  display: block;
+  position: relative;
+  margin: 24px 0 0 24px;
+  font-family: Plus Jakarta Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #1a202c;
+  font-size: 3.2vh;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.reco-section {
+  position: relative;
+  width: 36vw;
+  height: 5vh;
+  margin: 2vh 0 0 2vw;
+  font-size: 0px;
+  z-index: 3;
+  overflow: visible auto;
+  background: #ffffff;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 70px;
+}
+
+.reco-input-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 0 0 5vw; 
+  font-family: Jakarta Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  font-size: 1.9vh;
+  font-weight: 500;
+  text-align: justified;
+  white-space: nowrap;
+  border-color: transparent;
+  z-index: 5;
+}
+
+.reco-input-field:focus {
+  outline: none;
+  border-color: transparent; 
+}
+
+
+.reco-pic {
+  position: absolute;
+  width: 3.5vh;
+  height: 3.5vh;
+  top: 0.8vh;
+  left: 1.2vw;
+  opacity: 0.8;
+  background: url(../assets/images/search.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 6;
+}
+
+.reco-choices-list {
+  padding-left: 12.7vh;
+  list-style: none;
+  font-family: Jakarta Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  font-size: 2.8vh;
+  font-weight: 500;
+}
+
+.number-ball {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #3563e9;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  /* line-height: 30px; */
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.reco-choices-list li {
+  padding: 1.5vh 0 1.5vh 0;
+}
+
+.reco-delete-button {
+  /* margin-left: 2vw; */
+  margin-right: 3vw;
+  font-size: 2.8vh;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reco-delete-button:hover {
+  color: red;
+}
+
+.reco-get-recommendation-button {
+  width: 60%;
+  height: 8%;
+  margin-left: 20%;
+  background: #3563e9;
+  z-index: 10;
+  color: white;
+  font-size: 2.5vh;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+}
+
+.reco-get-recommendation-button:hover {
+  background: #2d52c2;
+}

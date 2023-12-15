@@ -1,26 +1,44 @@
 
 .suggestions-container {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    padding: 10px;
-    max-height: 200px;
-    overflow-y: auto;
+    margin-top: -2.5vh;
+    max-height: 20vh;
+    margin-left: 2vw;
+    width: 36vw;
+    background-color: #ffffff;
+    overflow-y:hidden;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 0 0 20px 20px; 
   }
   
   .suggestions-list {
+    /* margin-top: 2.5vh;   */
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding-top: 0vh;
+    margin-left: -3.3vw;
+  }
+
+  .suggestions-list:empty {
+    margin-top: -1vh;  
+    list-style: none;
+    padding-top: 0vh;
   }
   
   .suggestion-item {
-    padding: 8px;
+    padding: 1vh 1vh 1vh 8.5vh;
     cursor: pointer;
+    color: black;
     transition: background-color 0.3s ease;
+    font-family: Jakarta Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+    font-size: 1.9vh;
+    font-weight: 500;
+    text-align: justified;
+    white-space: nowrap;
   }
   
   .suggestion-item:hover {
-    background-color: #e0e0e0; /* Background color change on hover */
+    background-color: rgba(53, 98, 233, 0.382); /* Background color change on hover */
   }
   

@@ -1,6 +1,6 @@
 import movieData from './movieTitle.json'
 
-export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage) => {
+export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorMessage, setSuggestions) => {
   if (movies.length < 5) {
     if (inputValue.trim() !== '') {
       const movieAlreadyInList = movies.some((movie) =>
@@ -29,6 +29,7 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
   } else {
     setErrorMessage('You can only add up to 5 movies');
   }
+  setSuggestions([]);
 };
   
 
@@ -94,7 +95,46 @@ export const addMovie = (movies, setMovies, inputValue, setInputValue, setErrorM
     setSuggestions(slicedSuggestions);
   };
   
-  export const suggestionClick = (suggestion, setInputValue, setSuggestions) => {
-    setInputValue(suggestion.title);
+  
+  
+
+  export const suggestionClick = (suggestion, setInputValue, setSuggestions, movies, setMovies, setErrorMessage) => {
+    const inputValue = suggestion.title;
+    if (movies.length < 5) {
+      if (inputValue.trim() !== '') {
+        const movieAlreadyInList = movies.some((movie) =>
+          movie.title.toLowerCase() === inputValue.toLowerCase()
+        );
+        if(movieAlreadyInList === false){
+          const movieExists = movieData.some((movie) =>
+            movie.title.toLowerCase() === inputValue.toLowerCase()
+          );
+          if (movieExists) {
+            const movie = movieData.find((movie) =>
+                movie.title.toLowerCase() === inputValue.toLowerCase()
+            );
+            setMovies([...movies, movie]);
+            setInputValue('');
+            setErrorMessage('');
+          } else {
+            setErrorMessage('Movie not found in database');
+          }
+        } else {
+          setErrorMessage('Movie already exists in the list');
+        }
+      } else {
+        setErrorMessage('Please enter a movie name');
+      }
+    } else {
+      setErrorMessage('You can only add up to 5 movies');
+    }
     setSuggestions([]);
+    
+    // const movie = movieData.find((movie) =>
+    //           movie.title.toLowerCase() === suggestion.title.toLowerCase()
+    //       );
+    //       setMovies([...movies, movie]);
+    //       setInputValue('');
+    //       //setErrorMessage('');
+    // setSuggestions([]);
   };

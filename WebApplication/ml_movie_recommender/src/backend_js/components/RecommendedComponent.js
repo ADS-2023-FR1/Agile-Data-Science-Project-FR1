@@ -4,7 +4,6 @@ import '../../style/recommendedComp.css';
 const RecommendedMovies = ({ recommendations, moviesToShow, handleShowMore }) => {
   return recommendations.length > 0 && (
     <div className="recommended-movies">
-      <h2>Recommended Movies:</h2>
       <div className="movie-squares">
         {recommendations.slice(0, moviesToShow).map((movie, index) => (
           <div key={index} className="movie-square">
@@ -19,7 +18,7 @@ const RecommendedMovies = ({ recommendations, moviesToShow, handleShowMore }) =>
         ))}
       </div>
       {moviesToShow < recommendations.length && (
-        <button onClick={handleShowMore}>Show more results</button>
+        <button onClick={handleShowMore} class='reco-show-more'>Show more results</button>
       )}
     </div>
   );

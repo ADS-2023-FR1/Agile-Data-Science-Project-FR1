@@ -1,0 +1,45 @@
+.input-field {
+    border-radius: 70px;
+    border: 1px solid rgba(195, 212, 233, 0.40);
+    background: var(--Primary-0, #FFF);
+    padding-left: calc(20 * var(--rpx));
+}
+
+.input-field::placeholder {
+    padding-left: calc(4 * var(--rpx));
+}
+
+/* Input container */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.input-container input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+  
+.input-container button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-pic {
+    height: 200px;
+    height: 200px;
+    /* position: absolute;
+    width: 100px;
+    height: 100px;
+    top: calc(1440 * var(--rpx));
+    left: 20px;
+    background: url(../assets/images/search.png) 
+    no-repeat center; */
+    /* background-size: cover; */
+    /* opacity: 1;
+    z-index: 100; */
+  }

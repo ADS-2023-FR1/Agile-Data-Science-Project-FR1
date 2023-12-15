@@ -1,13 +1,25 @@
 import * as React from "react";
 import '../../style/home.css';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function Home(props) {
+
+  useEffect(() => {
+    // Set the title when the component mounts
+    return () => {
+      document.title = 'MovieRec';
+    };
+
+  }, []);
+
   return (
     <>
       <div className='main-container'>
       <div className='section'>
-        <span className='text'>MovieRe</span>
+        <Link to="/home">
+          <span className='text'>MovieRec</span>
+        </Link>
         <Link to="/login">
           <div className='group'>
             <span className='text-2'>Log in</span>
