@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/376917009144325532/ec321a232c164d69a5b88ec979f0f547/artifacts
+end_time: 1702309613869
+entry_point_name: ''
+experiment_id: '376917009144325532'
+lifecycle_stage: active
+run_id: ec321a232c164d69a5b88ec979f0f547
+run_name: popular-kite-101
+run_uuid: ec321a232c164d69a5b88ec979f0f547
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702309613858
+status: 4
+tags: []
+user_id: edge

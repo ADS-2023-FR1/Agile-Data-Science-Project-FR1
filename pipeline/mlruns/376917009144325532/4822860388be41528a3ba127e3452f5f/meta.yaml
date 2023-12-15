@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/376917009144325532/4822860388be41528a3ba127e3452f5f/artifacts
+end_time: 1702316603264
+entry_point_name: ''
+experiment_id: '376917009144325532'
+lifecycle_stage: active
+run_id: 4822860388be41528a3ba127e3452f5f
+run_name: nebulous-fly-61
+run_uuid: 4822860388be41528a3ba127e3452f5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702316589952
+status: 3
+tags: []
+user_id: edge

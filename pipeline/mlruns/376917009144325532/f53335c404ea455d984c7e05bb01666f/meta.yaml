@@ -1,0 +1,15 @@
+artifact_uri: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/376917009144325532/f53335c404ea455d984c7e05bb01666f/artifacts
+end_time: 1702316635573
+entry_point_name: ''
+experiment_id: '376917009144325532'
+lifecycle_stage: active
+run_id: f53335c404ea455d984c7e05bb01666f
+run_name: magnificent-mink-369
+run_uuid: f53335c404ea455d984c7e05bb01666f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702316610157
+status: 3
+tags: []
+user_id: edge

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1702316603262
+current_stage: None
+description: null
+last_updated_timestamp: 1702316603262
+name: Factorizer-Model
+run_id: 4822860388be41528a3ba127e3452f5f
+run_link: null
+source: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/376917009144325532/4822860388be41528a3ba127e3452f5f/artifacts/artifacts
+status: READY
+status_message: null
+storage_location: file:///home/edge/Documentos/DS/agile_ds/Agile-Data-Science-Project-FR1/pipeline/mlruns/376917009144325532/4822860388be41528a3ba127e3452f5f/artifacts/artifacts
+user_id: null
+version: 3
